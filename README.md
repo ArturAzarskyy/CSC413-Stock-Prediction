@@ -35,5 +35,21 @@ Drive.
 
 
 
-## Model:
+## Executing the Model:
 
+### Prep:
+
+First we get the pre-processed zipped files from the Google Drive. Since we want to use PyTorch we need to define a custom 
+Dataset class which given the name of the `.hdf5` file will make access to both `data` and `lables` directories of the file
+available. We also introduce transformation function which transforms the numpy values into tensors, and we also have a
+transformation which will help us to ensure that labels are of right shape if we decide to use RandomBatchSampler. I also
+added a small benchmarking code which shows that the data is correctly loaded and benchmarking the spead of loading of 
+both loaders
+
+### Model:
+
+## Contributions:
+- Artur Azarskyy: researched articles and papers on topic, created the pre-processing workflow, created the StockDataset
+ class, and sampler which could be used to train the model, writing of the documentation of the parts I did.
+- 
+[//]: # (TODO: everyone please add your names and contributions here )
