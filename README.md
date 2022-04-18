@@ -88,4 +88,4 @@ We are not obtaining our data from any insider unethical sources and are only us
 - Jordan Tam: Researched articles and papers on topic, worked on Time2Vector, wrote about Ethical Consideration and the 
  other parts of that I worked on
 - Arsh Khan: Researched the topics of Transformers, Stock Prediction Models and the use of Transformers in Stock Prediction Models. Due to Personal Issues was not able to contribute anything meaningful to the Project. Found a bug with the data processing by running it. 
-[//]: # (TODO: everyone please add your names and contributions here )
+<!-- [//]: # (TODO: everyone please add your names and contributions here ) -->
