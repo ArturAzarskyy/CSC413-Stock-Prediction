@@ -83,7 +83,8 @@ We are not obtaining our data from any insider unethical sources and are only us
 ## Contributions
 - Artur Azarskyy: researched articles and papers on topic, created the pre-processing workflow, created the StockDataset
  class, and sampler which could be used to train the model, writing of the documentation of the parts I did. I refactored the
- time embeding to be a torch model, I also created all of the other parts related to the basic model.
+ time embeding to be a torch model, I also created all of the other parts related to the basic model. Also did a bit for testing the model,
+ to make sure that models runs.
 - Jordan Tam: Researched articles and papers on topic, worked on Time2Vector, wrote about Ethical Consideration and the 
  other parts of that I worked on
 - 
