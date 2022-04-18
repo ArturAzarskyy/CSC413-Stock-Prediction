@@ -53,7 +53,9 @@ both loaders
 
 We start off by implementing a method utilized in the paper [**Time2Vec: Learning a Vector Representation of Time**](https://arxiv.org/pdf/1907.05321.pdf). The main purposes of using Time2Vec is to capture the ideas of both periodic and non-periodic patterns and not running into the issue of time rescaling - measuring time using different scales (ex. days, hours seconds). For the first iteration, Time2Vec utilizes a linear or non-periodic representation of the time vector and every other iteration is a function of the time vector representing the periodic feature. In the paper, it was shown that the sin function outperformed other non-linear functions such as sigmoid, tanh and ReLU in terms of accuracy and stability.
 
-![Time2Vec](https://user-images.githubusercontent.com/42477683/163737739-715d843d-fe11-4e79-9d45-a0f265324035.png)
+ <p align="center">
+    <img src="https://user-images.githubusercontent.com/42477683/163737739-715d843d-fe11-4e79-9d45-a0f265324035.png" alt="alternate text">
+ </p>
 
 Fot our initial model we decided to go with the simple transformer model. Which contains a multiple attention heads, encoder and decoder. As mentioned in the colab this model was enspired from original paper [Attention Is All You Need](https://arxiv.org/abs/1706.03762) and Jan Schmitz's article 
 [Stock predictions with state-of-the-art Transformer and Time Embeddings](https://towardsdatascience.com/stock-predictions-with-state-of-the-art-transformer-and-time-embeddings-3a4485237de6#:~:text=A%20Transformer%20is%20a%20neural,and%20Multi%2DHead%20Attention%20layer), 
@@ -63,13 +65,17 @@ Please note that some parameters values migh vary from the onece in the model to
 
 
 ##### One-head Attention:
-![OneHead](https://user-images.githubusercontent.com/42477683/163741343-6a4c54c7-68d0-4bdc-94fe-c71bb0f41ae5.png)
+
+ <p align="center">
+    <img src="https://user-images.githubusercontent.com/42477683/163856124-05358808-cb98-45f7-8ab5-2b6cbed24611.png" alt="alternate text">
+ </p>
+
 
 ##### Multi-head Attention:
-![MultiHead](https://user-images.githubusercontent.com/42477683/163741346-54c95a8f-20ff-40dc-9cf7-dfa51167af61.png)
 
-
-
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/42477683/163741346-54c95a8f-20ff-40dc-9cf7-dfa51167af61.png">
+</Div>
 
 ### Results
 
@@ -86,6 +92,6 @@ We are not obtaining our data from any insider unethical sources and are only us
  time embeding to be a torch model, I also created all of the other parts related to the basic model. Also did a bit for testing the model,
  to make sure that models runs.
 - Jordan Tam: Researched articles and papers on topic, worked on Time2Vector, wrote about Ethical Consideration and the 
- other parts of that I worked on
+ other parts of that I worked on. Touched up README formatting and created model diagrams
 - Arsh Khan: Researched the topics of Transformers, Stock Prediction Models and the use of Transformers in Stock Prediction Models. Due to Personal Issues was not able to contribute anything meaningful to the Project. Found a bug with the data processing by running it. 
 <!-- [//]: # (TODO: everyone please add your names and contributions here ) -->
