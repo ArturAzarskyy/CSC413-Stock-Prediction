@@ -51,6 +51,12 @@ both loaders
 We start off by implementing a method utilized in the paper [**Time2Vec: Learning a Vector Representation of Time**](https://arxiv.org/pdf/1907.05321.pdf). The main purposes of using Time2Vec is to capture the ideas of both periodic and non-preiodic patterns and not running into the issue of time rescaling - measuring time using different scales (ex. days, hours seconds). For the first iteration, Time2Vec utilizes a linear or non-periodic representation of the time vector and every other iteration is a function of the time vector representing the periodic feature. In the paper, it was shown that the sin function outperformed other non-linear functions such as sigmoid, tanh and ReLU in terms of accuracy and stability.
 
 
+Fot our initial model we decided to go with the simple transformer model. Which contains a multiple attention heads, encoder and decoder. As mentioned in the colab this model was enspired from original paper [Attention Is All You Need](https://arxiv.org/abs/1706.03762) and Jan Schmitz's article [Stock predictions with state-of-the-art Transformer and Time Embeddings](https://towardsdatascience.com/stock-predictions-with-state-of-the-art-transformer-and-time-embeddings-3a4485237de6#:~:text=A%20Transformer%20is%20a%20neural,and%20Multi%2DHead%20Attention%20layer), to create our base model. This model would act as a refference for our future modifications and experiments with difirent variations of the Transformer model.
+
+
+### Results
+
+
 ### Ethical Consideration: 
 
 It is important to understand that in order for one person to make money in the stock market and often times, another person typically loses money. Our model’s main purpose is to predict the future price of a stock. A successful stock market predictor can raise ethical issues if abused. This includes negatively impacting an excessive amount of buyers who take your loss or investing in companies that perform unethical business practices in orderto profit.  However, if used correctly, our model will help users develop a better overall understanding of factors affecting the stock market.
@@ -59,7 +65,8 @@ We are not obtaining our data from any insider unethical sources and are only us
 
 ## Contributions:
 - Artur Azarskyy: researched articles and papers on topic, created the pre-processing workflow, created the StockDataset
- class, and sampler which could be used to train the model, writing of the documentation of the parts I did.
+ class, and sampler which could be used to train the model, writing of the documentation of the parts I did. I refactored the
+ time embeding to be a torch model, I also created all of the other parts related to the basic model.
 - Jordan Tam: Researched articles and papers on topic, worked on Time2Vector, wrote about Ethical Consideration and the 
  other parts of that I worked on
 - 
