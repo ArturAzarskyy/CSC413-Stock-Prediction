@@ -59,7 +59,7 @@ Fot our initial model we decided to go with the simple transformer model. Which 
 [Stock predictions with state-of-the-art Transformer and Time Embeddings](https://towardsdatascience.com/stock-predictions-with-state-of-the-art-transformer-and-time-embeddings-3a4485237de6#:~:text=A%20Transformer%20is%20a%20neural,and%20Multi%2DHead%20Attention%20layer), 
 to create our base model. Below you can see diagrams of One-head Attention archetecture, and Multi-head Attention archetecture we used for base model.
 
-Please Note that some parameters migh vary due to the fact that we changed some of them when we ran the model.
+Please note that some parameters values migh vary from the onece in the model to the fact that we changed some of them when we trained the model.
 
 
 ##### One-head Attention:
